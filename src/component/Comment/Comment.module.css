@@ -1,0 +1,70 @@
+.commentContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  background:var(--gray01);
+  border: 1px solid var(--gray02);
+  border-radius: 9px; 
+
+  padding-left: 0.8rem;
+}
+
+.commentUser{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.commentUser > img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+.commentUser .authorAndTime strong{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+}
+
+.commentContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentContent p{
+  padding: 2rem;
+
+  text-align: center;
+}
+.commentContent .ButtonContainer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentContent button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  /* a altura do botão não é feita pelo conteúdo. logo, sempre será
+    maior que o conteúdo. o line-height: 0 deixa a altura do botão ser
+    feita pelo conteúdo. o font-size:0 também
+  */
+  line-height: 0;
+  border-radius: 2px;
+}
+
+.commentContent button:hover {
+  color: var(--purple);
+}
+
+.commentContent p {
+  color: var(--blackText);
+  padding-right: 60px;
+}
+
